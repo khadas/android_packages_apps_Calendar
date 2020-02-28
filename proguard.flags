@@ -1,5 +1,14 @@
 -keep class com.android.calendar.OtherPreferences
 -keep class com.android.calendar.GeneralPreferences
+-keep class com.android.calendar.month.MonthByWeekFragment{
+ *;
+ }
+-keep class com.android.calendar.month.SimpleDayPickerFragment{
+ *;
+ }
+-keep class com.android.calendar.DayFragment{
+ *;
+ }
 -keepclassmembers class com.android.calendar.AllInOneActivity {
   *** setControlsOffset(...);
 }
